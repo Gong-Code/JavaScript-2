@@ -1,0 +1,25 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 0 0 2rem;
+  text-align: left;
+}
+
+.nav-container{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+}
