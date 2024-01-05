@@ -41,7 +41,7 @@ const App = () => {
     <div>
       <Navbar />
       <BooksList books={books} />
-      <MoviesList movies={movies}/>
+      <MoviesList movies={movies} />
       <Footer />
     </div>
   )
