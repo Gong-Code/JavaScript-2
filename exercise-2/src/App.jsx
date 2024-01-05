@@ -26,7 +26,7 @@ const App = () => {
     {
       id: uuidv4(),
       title: 'Interstellar',
-      director: 'Christopher nolan'
+      director: 'Christopher Nolan'
       
     },
     {
