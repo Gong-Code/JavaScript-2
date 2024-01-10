@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const AddTodoForm = ({ setTodos }) => {
+export const AddTodoForm = () => {
 
     const [title, setTitle] = useState('')
 
@@ -13,7 +13,7 @@ export const AddTodoForm = ({ setTodos }) => {
         };
         
         try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/todos', {
+            const response = await fetch('https://jsonplaceholder.typicode.com/todos/', {
                 method: 'POST',
                 body: JSON.stringify(newTodo),
                 headers: {
@@ -28,8 +28,7 @@ export const AddTodoForm = ({ setTodos }) => {
             const todo = await response.json();
             console.log(todo);
 
-            setTodos(prevTodos => [...prevTodos, todo]);
-
+            setTodos(todo)
 
         } catch (error) {
             console.error('Fetch failed:', error);
