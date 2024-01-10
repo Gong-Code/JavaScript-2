@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: darkgray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.todo--list{
+  margin-top: 2rem;
+}
+
+.todo--item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 4px 4px 4px 5px #00000046;
+  border: 1px solid #eee;
+  padding: 1rem;
+  cursor: pointer;
+}
+.todo--item:hover{
+  background-color: #83808080;
+}
+
+.add--form {
+  padding: 1rem;
+  border-top: 1px solid #7c7c7c;
+}
+
+.form--group {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: .3rem
+}
+
+.form--control {
+  width: 100%;
+  max-width: 736px;
+  display: flex; 
+  height: 2rem;
+  padding: 20px;
+  border: 0;
+  border-radius: .5rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form--btn{
+  border: 0;
+  padding: 0 1.75rem;
+  border-radius: .5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #00000067;
+}
+
+.remove--btn{
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1em;
+  background-color: firebrick;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+
+
