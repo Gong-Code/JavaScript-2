@@ -4,10 +4,9 @@ import { useState } from "react";
 
 
 function App() {
-  const [todos, setTodos] = useState([]);
   return (
     <>
-      <AddTodoForm setTodos={setTodos}/>
+      <AddTodoForm />
       <div className="container">
         <TodoList />
       </div>
